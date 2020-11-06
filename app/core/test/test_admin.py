@@ -31,5 +31,5 @@ class AdminSiteTests(TestCase):
         # this assertion looks for the value contain at the response obtained
         # also "checks" if the http response code is 200/400
         self.assertContains(res, self.user.name)
-        self.assertContains(res, self.user.mail)
+        self.assertContains(res, self.user.email)
 
